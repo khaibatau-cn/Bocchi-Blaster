@@ -414,7 +414,7 @@ class Game:
             pygame.draw.circle(self.screen, color, (int(s[0]), int(s[1])), s[3])
  
     def _draw_game(self):
-        bocchi_draw(self.bocchi, self.screen, debug=True)
+        bocchi_draw(self.bocchi, self.screen, debug=False)
  
         for b in self.bullets:
             bullet_draw(b, self.screen)
